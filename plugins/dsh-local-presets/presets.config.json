@@ -1,0 +1,10 @@
+{
+  "_comment": "本插件的配置（可选；改它不用碰代码）。① exclude：不注册的预设 id；② disableRows：显式屏蔽的组合行（本版启动不了的行）；③ preflight：注册前用 loader 的解析器逐行预检 name，解析不到自动置 disabled —— 换内核版本后子路径导出消失（如 tool-subagent-control/list-agents）也不会让整份预设标「加载失败」。改完执行 dev_reload_package dsh-local-presets 或重启 DSH。",
+  "exclude": [],
+  "disableRows": [
+    "tool-workflow",
+    "tool-ralph",
+    "workflow-worker-thread"
+  ],
+  "preflight": true
+}

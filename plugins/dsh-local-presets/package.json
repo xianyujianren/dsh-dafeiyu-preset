@@ -1,0 +1,20 @@
+{
+  "name": "dsh-local-presets",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "把 ~/.dsh/.agent-presets/<id>/ 的目录式预设注册进 DSH（内核不扫描该目录，必须由插件调用 agentPresets.register）",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "agent-preset",
+    "local-presets"
+  ],
+  "license": "MIT"
+}
